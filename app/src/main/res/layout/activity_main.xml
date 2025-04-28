@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_blue">
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settings"
+            android:src="@drawable/logo_settings"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/settings_button"/>
+    </RelativeLayout>
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:orientation="vertical"
+       android:gravity="center"
+       android:padding="50dp">
+
+
+       <Button
+
+           android:id="@+id/open_maps_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="35dp"
+           android:text="@string/open_google_maps"
+           android:textStyle="bold"
+           android:textSize="16sp"
+           tools:ignore="MissingClass"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/brand_blue"
+           android:padding="15dp"
+           android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/open_translation_button"
+           android:text="open translation"
+           android:layout_marginBottom="35dp"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/brand_blue"
+           android:padding="15dp"
+           android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Suggest my daily plans"
+           android:id="@+id/open_suggest_plan_button"
+           android:layout_marginBottom="35dp"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/brand_blue"
+           android:padding="15dp"
+           android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+       <Button
+           android:id="@+id/open_ai_button"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="@string/open_ai_assistant"
+           android:textSize="16sp"
+           android:textStyle="bold"
+           android:textColor="@color/white"
+           android:backgroundTint="@color/brand_blue"
+           android:padding="15dp"
+           android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+   </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_app"
+        android:src="@drawable/logo_app"
+        android:layout_margin="10dp"
+        android:alpha="0.3"/>
+
+</RelativeLayout>

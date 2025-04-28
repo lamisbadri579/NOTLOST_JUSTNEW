@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="50dp">
+        <TextView
+            android:id="@+id/register_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textColor="#0C0652"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/agbalumo_regular"/>
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/fullname"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#988B8B"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+        <EditText
+            android:id="@+id/email_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textColorHint="#988B8B"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+        <EditText
+            android:id="@+id/password_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginBottom="35dp"
+            android:autofillHints="password"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#988B8B"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:autofillHints="password"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#988B8B"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+        <Button
+            android:textAllCaps="false"
+            android:id="@+id/signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/sign_up"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_app"
+        android:src="@drawable/logo_app"
+        android:layout_margin="10dp"
+        android:alpha="0.3"/>
+
+</RelativeLayout>

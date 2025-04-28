@@ -1,0 +1,26 @@
+# Ignore IntelliJ IDEA and Android Studio files
+*.iml
+.idea/
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+
+# Ignore gradle-related files and folders
+.gradle/
+local.properties  # Contains local-specific information, like API keys
+
+# Ignore build output and intermediate files
+/build/
+captures/
+
+# Ignore external native build files
+.externalNativeBuild/
+
+# Ignore cxx build files
+.cxx/
+
+# Other potential sensitive files
+gradle.properties  # If you store API keys or secrets here

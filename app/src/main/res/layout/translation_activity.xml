@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/brand_blue">
+        <ImageView
+            android:id="@+id/settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo_settings"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/settings_button"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/home"
+            android:src="@drawable/logo_home_white"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:id="@+id/home_button"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        tools:ignore="UselessParent"
+        android:padding="50dp">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:visibility="gone"/>
+        <Spinner
+
+            android:layout_marginBottom="10dp"
+            android:id="@+id/sourceLangSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/brand_red"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+
+                android:id="@+id/userInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:textSize="13sp"
+                android:hint="@string/enter_text_or_speak"
+                android:inputType="textMultiLine"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:paddingEnd="25dp"
+                android:background="@drawable/translation_fields"
+                android:textColorHint="@color/hint_color"
+                android:textAlignment="viewStart"
+                android:gravity="start|top"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry"
+                android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/input_mic"
+                android:id="@+id/micButton"
+                android:contentDescription="@string/mic"
+                android:layout_alignBottom="@id/userInputEditText"
+                android:layout_alignEnd="@+id/userInputEditText"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="5dp"
+                />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/translateButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/translate"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/brand_blue"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+        <Spinner
+            android:id="@+id/targetLangSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+           android:backgroundTint="@color/brand_red"
+
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/translatedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/hint_color"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="15dp"
+                android:paddingEnd="35dp"
+                android:textSize="13sp"
+                android:background="@drawable/translation_fields"
+                android:hint="@string/translated_text"
+                android:textAlignment="viewStart"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/speaker_icon"
+                android:id="@+id/speakButton"
+                android:contentDescription="@string/speaker"
+                android:layout_alignBottom="@+id/translatedTextView"
+                android:layout_alignEnd="@+id/translatedTextView"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="7dp"/>
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/logo_app"
+        android:src="@drawable/logo_app"
+        android:layout_margin="10dp"
+        android:alpha="0.3"/>
+</RelativeLayout>

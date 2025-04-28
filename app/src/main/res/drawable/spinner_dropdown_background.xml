@@ -1,0 +1,5 @@
+<!-- res/drawable/spinner_dropdown_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/brand_blue" /> <!-- Background of dropdown items -->
+    <corners android:radius="8dp" />
+</shape>

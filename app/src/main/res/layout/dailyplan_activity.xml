@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/dailyplan">
+
+    <LinearLayout
+        android:elevation="2dp"
+        android:id="@+id/lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:ignore="UselessParent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@color/brand_blue">
+            <ImageView
+                android:id="@+id/settings_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/logo_settings"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/settings_button"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/home"
+                android:src="@drawable/logo_home_white"
+                android:layout_alignParentEnd="true"
+
+                android:id="@+id/home_button"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="30dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_plan_for_today"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_blue"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/agbalumo_regular"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_your_country"
+                    android:textColor="@color/brand_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/akayakanadaka_regular"
+                    />
+
+                <Spinner
+                    android:id="@+id/spinnerCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:backgroundTint="@color/brand_red"/>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_your_city"
+                    android:textColor="@color/brand_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/akayakanadaka_regular"/>
+
+                <Spinner
+                    android:id="@+id/spinnerCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/brand_red"
+                    android:layout_marginBottom="20dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_your_interests_optional"
+                    android:textColor="@color/brand_red"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/akayakanadaka_regular"/>
+
+                <CheckBox
+                    android:id="@+id/checkGeneral"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/general_exploration"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <CheckBox
+                    android:id="@+id/checkCulture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/culture"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <CheckBox
+                    android:id="@+id/checkNature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nature"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <CheckBox
+                    android:id="@+id/checkFoodie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/food"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <CheckBox
+                    android:id="@+id/checkShopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shopping"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <CheckBox
+                    android:id="@+id/checkNightlife"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nightlife"
+                    android:textColor="@color/black"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/how_much_free_time_do_you_have"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/brand_red"
+                    android:fontFamily="@font/akayakanadaka_regular"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/from"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/brand_blue"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                    <TimePicker
+                        android:id="@+id/timePickerFrom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/to"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/brand_blue"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                    <TimePicker
+                        android:id="@+id/timePickerTo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:timePickerMode="spinner"/>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonGeneratePlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/generate_plan"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/brand_blue"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <LinearLayout
+                    android:id="@+id/plan_intro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/your_suggested_plan"
+                        android:textColor="@color/brand_blue"
+                        android:textStyle="bold"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="20dp"
+                        android:fontFamily="@font/agbalumo_regular"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/list_of_activities"
+                        android:textColor="@color/brand_red"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/akayakanadaka_regular"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textViewGeneratedPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_personalized_plan_will_appear_here"
+                    android:padding="12dp"
+                    android:background="#BFA9B9"
+                    android:textColor="@color/black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/buttonModifyPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/modify_plan"
+                    android:backgroundTint="@color/brand_blue"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"
+                    android:textStyle="bold"/>
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/buttonSeeLocations"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/see_locations_on_google_maps"
+                    android:backgroundTint="@color/brand_blue"
+                    android:textColor="@android:color/white"
+                    android:layout_marginBottom="20dp"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"
+                    android:textStyle="bold"/>
+
+
+
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/buttonClearPlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clear_plan"
+                    android:backgroundTint="@color/brand_red"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/roboto_variable_font_wdth_wght_one"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/location_links"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:alpha="0.3">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            android:contentDescription="@string/logo_app"
+            android:src="@drawable/logo_app"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

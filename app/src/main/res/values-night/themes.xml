@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.StudentGuide" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="29">false</item>
+        <item name="android:windowBackground">@drawable/gradient_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="CustomSpinnerStyle">
+        <!-- Set the background of the spinner (optional) -->
+        <item name="android:background">@drawable/custom_spinner_background</item>
+
+        <!-- Customize text and dropdown, but leave the arrow intact -->
+        <item name="android:popupBackground">@android:drawable/btn_dropdown</item>
+        <item name="android:textColor">@color/black</item> <!-- Customize text color -->
+        <item name="android:paddingStart">10dp</item> <!-- Optional: add padding to start (left) -->
+    </style>
+
+
+</resources>
